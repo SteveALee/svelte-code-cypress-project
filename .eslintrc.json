@@ -1,0 +1,20 @@
+{
+	"plugins": ["svelte3", "cypress"],
+	"extends": [
+		"eslint:recommended",
+		"prettier",
+		//"plugin:prettier/recommended", // !! This crashes the svelte compiler
+		"plugin:cypress/recommended"
+	],
+	"overrides": [{ "files": "*.svelte", "processor": "svelte3/svelte3" }],
+	"env": {
+		"cypress/globals": true,
+		"browser": true,
+		"es6": true
+	},
+	"parserOptions": { "ecmaVersion": 2019, "sourceType": "module" },
+	"rules": {
+		"prettier/prettier": "error"
+		//"noConsole: "off"
+	}
+}

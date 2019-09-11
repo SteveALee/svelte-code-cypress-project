@@ -1,0 +1,9 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	// "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"eslint.enable": true,
+	"eslint.autoFixOnSave": false,
+	"eslint.alwaysShowStatus": true,
+	"eslint.validate": ["javascript", { "language": "svelte", "autoFix": true }]
+}
