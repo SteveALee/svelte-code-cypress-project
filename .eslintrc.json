@@ -1,10 +1,6 @@
 {
 	"plugins": ["svelte3", "cypress"],
-	"extends": [
-		"eslint:recommended",
-		"plugin:prettier/recommended", // !! This crashes the svelte compiler when linting
-		"plugin:cypress/recommended"
-	],
+	"extends": ["eslint:recommended", "prettier", "plugin:cypress/recommended"],
 	"overrides": [{ "files": "*.svelte", "processor": "svelte3/svelte3" }],
 	"env": {
 		"cypress/globals": true,
@@ -13,7 +9,6 @@
 	},
 	"parserOptions": { "ecmaVersion": 2019, "sourceType": "module" },
 	"rules": {
-		"prettier/prettier": "error"
-		//"noConsole: "off"
+		"noConsole": "off"
 	}
 }

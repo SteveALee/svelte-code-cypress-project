@@ -1,7 +1,10 @@
 {
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	// "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"prettier.disableLanguages": ["vue", "svelte"],
+	"[svelte]": {
+		"editor.defaultFormatter": "JamesBirtles.svelte-vscode"
+	},
 	"eslint.enable": true,
 	"eslint.autoFixOnSave": false,
 	"eslint.alwaysShowStatus": true,
