@@ -2,8 +2,7 @@
 	"plugins": ["svelte3", "cypress"],
 	"extends": [
 		"eslint:recommended",
-		"prettier", // use this while next line fails
-		//"plugin:prettier/recommended", // !! This crashes the svelte compiler when linting
+		"plugin:prettier/recommended", // !! This crashes the svelte compiler when linting
 		"plugin:cypress/recommended"
 	],
 	"overrides": [{ "files": "*.svelte", "processor": "svelte3/svelte3" }],
